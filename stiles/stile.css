@@ -1,0 +1,178 @@
+body {
+    background-color: #101115;
+    color: #85879d;
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to bottom, rgb(12 14 17), rgb(19 20 32 / 90%)), url(/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    font-size: 16px;
+    
+}
+
+
+h3 {
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    border-radius: 10px;
+}
+
+.card__contact {
+    background-color: #101115;
+    border-radius: 20px;
+    width: 275px;
+    height: 490px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 15px;
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+.profession {
+    font-size: 1.2rem;
+    color: #85879d;
+    text-align: center;
+}
+
+.contact__info {
+    vertical-align: auto;
+}
+
+.card__name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.li__about {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+.about__me {
+    background-color: #101115;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.institutions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.years {
+    flex: 0 0 70%;
+    text-align: right;
+}
+
+.years-2 {
+    flex: 0 0 70%;
+    text-align: right;
+}
+
+.years-3 {
+    flex: 0 0 60%;
+    text-align: right;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 32px;
+    padding-top: 3px;
+    border-bottom: 2px solid #f9dd94;      
+}
+
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0 ;
+}
+
+.skill__bar {
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill__per {
+    height: 14px;
+    background: #f9dd94;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+    box-shadow: 0 0 15px #f9dd94;
+}
+
+.skill__per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translate(50%);
+}
+
+.skill__per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
