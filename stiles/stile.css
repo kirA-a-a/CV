@@ -12,19 +12,20 @@ body {
     
 }
 
-
 h3 {
     color: #fff;
 }
 
 .row {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .photo {
     border-radius: 10px;
+}
+
+.info__about__me {
+    padding-left: 10px;
 }
 
 .card__contact {
@@ -33,12 +34,10 @@ h3 {
     width: 275px;
     height: 490px;
     padding: 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     margin: 15px;
 }
 
@@ -103,7 +102,12 @@ p {
 }
 
 .years-3 {
-    flex: 0 0 60%;
+    flex: 0 0 88%;
+    text-align: right;
+}
+
+.years-4 {
+    flex: 0 0 88%;
     text-align: right;
 }
 
